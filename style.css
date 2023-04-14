@@ -10,9 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color:#515052;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(71deg, rgba(154,131,127,1) 0%, rgba(43,42,42,1) 39%, rgba(0,0,0,1) 96%);
     padding-top: 5px;
 }
 .portfolio {
@@ -58,71 +58,83 @@
 
 .caixa-principal {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    background-color: #333138;
-}
+    height: 100vh;
+    background: linear-gradient(71deg, rgba(154,131,127,1) 0%, rgba(43,42,42,1) 39%, rgba(0,0,0,1) 96%);
 
+}
 .background{
     display: flex;
-    width: 50%;
+    justify-content:center;
+    align-items: center; 
+}
+.background img {
+    width: 60%;
+    
 }
 
+
 .nome {
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
     font-size: 30px;
+    color: white;
+    
 
 }
 .nome h1 spam {
     color: red;
+    
 }
 .nome h3 {
     font-size: 25px;
+   
 }
 
-section {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 170px ;
-
-}
-
-.foto {
-    display: flex;
-    width: 60%;
+.foto img {
+    width:200px;
     border-radius: 60px;
     border: 2px solid rgb(187, 174, 174);
     cursor: pointer;
-    justify-items: center;
-   
+    box-shadow: 40px 44px 60px 59px black;
 }
 
-.fundo{
-    background-image: url(./fundo.jpg);
+.fundo {        
+    display: flex;                                                                         
+    background-image: url("./fundo.jpg");
     background-size: cover;
     background-position: center;
-    
-   
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
 }
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 
-.foto:hover {
+}
+.foto img:hover {
     transform: scale(1.3);
     transition: 2s;
     
 }
 
 .sobre-mim {
-    display: flex;
-    align-items: center;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     background-color: black;
     border-radius: 40px;
     border: 2px solid rgb(187, 174, 174);
-    width: 50%;
-    height: 110%;
+    width: 30%;
+    
     
 }
 
@@ -163,7 +175,7 @@ section div button:hover {
 .projetos {
  
     height: 100vh;
-    background-color: #515052;
+    background: linear-gradient(71deg, rgba(154,131,127,1) 0%, rgba(43,42,42,1) 39%, rgba(0,0,0,1) 96%);
     width: 100%;
     justify-content: center;
    
@@ -178,15 +190,14 @@ section div button:hover {
 
 .card {
     display: inline-block;
-    background-color: black;
+    background-color: rgb(68, 66, 66);
     width: 30%;
     border-radius: 20px;
     padding: 10px;
     padding-bottom: 50px;
     text-align: center;
     justify-content: center;
-    
-    
+    box-shadow: 40px 38px 28px -4px black;
 }
 
 .card img{
@@ -195,6 +206,8 @@ section div button:hover {
     width: 80%;
     position: relative;
     padding: 20px;
+    box-shadow: 13px 14px 16px 11px rgba(0,0,0,0,75);
+   
     
 }
 
@@ -240,8 +253,7 @@ section div button:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 80px;
-    padding-bottom: 20px;
+    margin-top: 40px;
 }
 
 footer{
@@ -294,4 +306,113 @@ footer{
     display: flex;
     gap: 18px
     
+}
+
+.menu-icon{
+    width: 25px;
+    margin: 10px;
+    display: none;
+    background-color: #515052;
+    border-radius: 10px;
+}
+/*media query*/
+@media (max-width: 760px){
+
+.portfolio{
+    font-size: 20px;
+}
+
+.portfolio spam {
+    color: red;
+    font-size: 20px;
+}
+
+.caixa-principal{
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nome{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 40vh;
+    width: 60vh;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
+}
+
+.background img{
+    width: 80%;
+}
+
+.foto img {
+    width: 70%;
+    height: 90%;
+}
+
+.fundo {        
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.sobre-mim {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: black;
+    border-radius: 40px;
+    border: 2px solid rgb(187, 174, 174);
+    width: 80%;
+    
+    
+}
+.projetos {
+    height: auto;
+    background-color: #515052;
+    justify-content: center;
+   
+}
+.cards-projetos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+  width: 80%;
+  height: 50%;
+  margin-bottom: 10%;
+}
+
+    #menu-list{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: 5px;
+        left: 110px;
+        overflow:hidden;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        width: 30px;
+
+    }
+.link-menu{
+    display: flex;
+    display: block;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+
+
 }

@@ -11,27 +11,35 @@
     <title>Mauro Cesar</title>
 </head>
 <body>
-    <nav class = "superior">
+
+    <div class = "superior">
         <h2 class="portfolio" >Porti<spam>folio</spam></h2>
-        <ul>
-            <li><a class="link-menu" href="#home">Home</a></li>
-            <li><a class="link-menu" href="#sobre">Sobre</a></li>
-            <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
-            <li><a class="link-menu" href="#fale comigo">Contato</a></li>
-        <ul>
-    </nav>
+        <nav class = "menu">
+            <ul id="menu-list">
+                <li><a class="link-menu" href="#home">Home</a></li>
+                <li><a class="link-menu" href="#sobre">Sobre</a></li>
+                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
+                <li><a class="link-menu" href="#fale comigo">Contato</a></li>
+            <ul> 
+        </nav>
+        <img src ="bottow.png" class = "menu-icon" onclick="showMenu()">
+    </div>
+
     <section class="caixa-principal" id="home">
-            <div class= "nome" >
+        <div class= "nome" >
                 <h1>Mauro <spam>Cesar</spam></h1>
                 <h3>Programador Front End</h3>
-            </div>
-        <img class = "background"img src= "background.png">
+         </div>
+        <div class = "background">
+                 <img src= "background.png">
+        </div>
     </section>
 
     <section class = "fundo" id ="sobre">
-        <div>
-            <img class = "foto" src = "Mauro.png">
+        <div class = "foto">
+            <img src = "Mauro.png">
         </div>
+
         <div class = "sobre-mim">
             <h2>Sobre mim</h2>
             <p>Eu sou programador Front End com atução em Python e Mobile</p>
@@ -76,4 +84,16 @@
     </footer>
     
 </body>
+<script>
+    const menuList = document.getElementById ("menu-list");
+    menuList.style.maxHeight = "0px"
+    
+    function showMenu(){
+        if (menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "120px"
+        }else {
+        menuList.style.maxHeight = "0px"
+    }
+}
+</script>
 </html>
