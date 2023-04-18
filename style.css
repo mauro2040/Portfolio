@@ -442,9 +442,18 @@ footer{
     background-color: black;
     border-radius: 40px;
     border: 2px solid rgb(187, 174, 174);
-    width: 80%;
-    
-    
+    width: 80%; 
+}
+
+.botoes{
+    justify-content: space-between;
+}
+.contato{
+    margin-right: 10px;
+}
+
+.baixar{
+    margin-left: 10px;
 }
 .projetos {
     height: auto;
@@ -499,5 +508,11 @@ footer{
     font-size: 15px;
 }
 
+.botao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
 
+}
 }
