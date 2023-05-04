@@ -381,7 +381,7 @@ footer{
 }
 
 /*media query*/
-@media (max-width: 760px){
+@media (max-width: 740px){
 
 .superior{
     height: 50px;
@@ -495,7 +495,7 @@ footer{
     transition: all 1s ease-in-out;
     flex-direction: column;
     top:  80px;
-    left: 200px;
+    left: 100px;
     text-align: center;
     overflow: hidden;
     background-color:  #262626;
@@ -532,6 +532,7 @@ footer{
     bottom: 20px;
     right: 40px;
     background-color: transparent;
+    z-index: 1;
 
 }
 }
