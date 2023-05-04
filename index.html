@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2?family= Josefin+Sans:wght@500 & family display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Mauro Cesar</title>
 </head>
 <body>
 
     <div class = "superior">
-        <h2 class="portfolio" >Porti<spam>folio</spam></h2>
-        <nav class = "menu">
+        <h2 class="portfolio" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">Porti<spam>folio</spam></h2>
+        <nav class = "menu"data-aos="fade-left" data-aos-duration="3000">
             <ul id="menu-list">
                 <li><a class="link-menu" href="#home">Home</a></li>
-                <li><a class="link-menu" href="#sobre">Sobre</a></li>
                 <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
                 <li><a class="link-menu" href="#fale comigo">Contato</a></li>
             <ul> 
@@ -26,21 +28,22 @@
     </div>
 
     <section class="caixa-principal" id="home">
-        <div class= "nome" >
+        <div class= "nome"data-aos="fade-right" data-aos-duration="3000">
                 <h1>Mauro <spam>Cesar</spam></h1>
-                <h3>Programador Front End</h3>
+                <div class = "cargo">
+                    <div class = "estatico" >Programador </div>
+                    <ul class = "dinamico">
+                        <li><span> JavaScript </span></li>
+                        <li><span> Python</span></li>
+                        <li><span> Front End </span></li>
+                        <li><span> Back End </span></li>
+                        <li><span> Full Stack </span></li>
+                        <li><span> Freelancer </span></li>
+                    </ul>
+                </div>
+                <img class = "foto" src = "Mauro.png">
          </div>
-        <div class = "background">
-                 <img src= "background.png">
-        </div>
-    </section>
-
-    <section class = "fundo" id ="sobre">
-        <div class = "foto">
-            <img src = "Mauro.png">
-        </div>
-
-        <div class = "sobre-mim">
+         <div class = "sobre-mim"data-aos="fade-left" data-aos-duration="3000">
             <h2>Sobre mim</h2>
             <p>Sou um desenvolvedor freelancer experiente em programação Python e JavaScript, especializado em criar soluções front-end usando frameworks e bibliotecas de ponta, como Node.JS e React.JS. Estou procurando por uma oportunidade emocionante em uma empresa de desenvolvimento de software ou financeira que valorize a excelência e a inovação. Minha paixão pela programação me permite criar soluções personalizadas e inovadoras para atender às necessidades específicas de cada cliente. Com meu compromisso com a excelência e a entrega de projetos de alta qualidade, estou confiante de que posso ajudar sua empresa a alcançar seus objetivos de negócios e levar sua presença online para o próximo nível. Vamos trabalhar juntos para criar soluções web excepcionais que impressionem seus clientes e aumentem a satisfação do usuário!</p>
             <div class = "botoes">   
@@ -49,25 +52,47 @@
             </div>
         </div>
     </section>
+
     <div class = "projetos" id = "projetos-id">
         <h2> Principais Projetos</h2>
 
         <div class="cards-projetos">
-            <div class = "card">
+            <div class = "card"data-aos="fade-down-right"data-aos-duration="2000">
                 <img src="./projeto1.JPG">
                 <h5>Projeto Html+CSS+JS</h5>
                 <p>Este é um projeto de aplicação web que utiliza HTML, CSS, JavaScript e a ferramenta Qmery para criar animações personalizadas, tornando a interface mais atraente e interativa. Com um design totalmente responsivo, a aplicação é acessível em qualquer dispositivo, mantendo a usabilidade excelente e consistente. O resultado é uma interface moderna e funcional, com desempenho rápido e eficiente, pronta para conquistar seus usuários!</p>
                 <a href = "https://mauro2040.github.io/projeto-anima-o/" class="project1" target="_blank" >Ver Projeto</a>
             </div>
 
-            <div class = "card">
+            <div class = "card" data-aos="fade-down-left" data-aos-duration="2000">
                 <img src="./prev_temp.JPG">
                 <h5>Previsão do tempo</h5>
                 <p>Conheça um projeto de aplicação web inovador que utiliza HTML, CSS e JavaScript para fornecer informações meteorológicas precisas sobre uma cidade, através de APIs confiáveis. Com um design moderno e responsivo, essa aplicação oferece desempenho rápido e eficiente, além de proporcionar uma experiência do usuário excepcional. É a escolha perfeita para quem busca projetos robustos e atraentes com tecnologias modernas..</p>
                 <a href = "https://mauro2040.github.io/previsao_do_tempo/" target="_blank">Ver Projeto</a>
             </div>
 
-            <div class = "card">
+            <div class = "card" data-aos="fade-down-right" data-aos-duration="2000">
+                <img src="./Projeto3.JPG">
+                <h5>Web Scrapping</h5>
+                <p>Este projeto em Python utiliza a plataforma Botcity RPA para enviar mensagens pelo WhatsApp, automatizando processos e aumentando a eficiência dos negócios. Com sua habilidade em Python e uso do Botcity RPA, é possível criar um robô para enviar mensagens em poucos cliques, otimizando o tempo e permitindo que você se concentre em tarefas mais importantes.</p>
+            <a href = "https://github.com/mauro2040/Jupyter-Prograns/tree/main/webscraping/" target="_blank">Ver Projeto</a>
+            </div>
+        
+            <div class = "card" data-aos="fade-down-left"data-aos-duration="2000">
+                <img src="./projeto1.JPG">
+                <h5>Projeto Html+CSS+JS</h5>
+                <p>Este é um projeto de aplicação web que utiliza HTML, CSS, JavaScript e a ferramenta Qmery para criar animações personalizadas, tornando a interface mais atraente e interativa. Com um design totalmente responsivo, a aplicação é acessível em qualquer dispositivo, mantendo a usabilidade excelente e consistente. O resultado é uma interface moderna e funcional, com desempenho rápido e eficiente, pronta para conquistar seus usuários!</p>
+                <a href = "https://mauro2040.github.io/projeto-anima-o/" class="project1" target="_blank" >Ver Projeto</a>
+            </div>
+
+            <div class = "card" data-aos="fade-down-right" data-aos-duration="2000">
+                <img src="./prev_temp.JPG">
+                <h5>Previsão do tempo</h5>
+                <p>Conheça um projeto de aplicação web inovador que utiliza HTML, CSS e JavaScript para fornecer informações meteorológicas precisas sobre uma cidade, através de APIs confiáveis. Com um design moderno e responsivo, essa aplicação oferece desempenho rápido e eficiente, além de proporcionar uma experiência do usuário excepcional. É a escolha perfeita para quem busca projetos robustos e atraentes com tecnologias modernas..</p>
+                <a href = "https://mauro2040.github.io/previsao_do_tempo/" target="_blank">Ver Projeto</a>
+            </div>
+
+            <div class = "card" data-aos="fade-down-left"data-aos-duration="2000">
                 <img src="./Projeto3.JPG">
                 <h5>Web Scrapping</h5>
                 <p>Este projeto em Python utiliza a plataforma Botcity RPA para enviar mensagens pelo WhatsApp, automatizando processos e aumentando a eficiência dos negócios. Com sua habilidade em Python e uso do Botcity RPA, é possível criar um robô para enviar mensagens em poucos cliques, otimizando o tempo e permitindo que você se concentre em tarefas mais importantes.</p>
@@ -103,4 +128,8 @@
     }
 }
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
