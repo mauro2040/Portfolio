@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= Josefin+Sans:wght@500 & family display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family= Josefin+Sans:wght@500 & family display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Mauro Cesar</title>
@@ -43,7 +43,7 @@
                 </div>
                 <img class = "foto" src = "Mauro.png">
          </div>
-         <div class = "sobre-mim"data-aos="fade-left" data-aos-duration="3000">
+         <div class = "sobre-mim"data-aos="fade-left" data-aos-duration="3000"onmouseover="aumentar()" onmouseout="diminuir()">
             <h2>Sobre mim</h2>
             <p>Sou um desenvolvedor freelancer experiente em programação Python e JavaScript, especializado em criar soluções front-end usando frameworks e bibliotecas de ponta, como Node.JS e React.JS. Estou procurando por uma oportunidade emocionante em uma empresa de desenvolvimento de software ou financeira que valorize a excelência e a inovação. Minha paixão pela programação me permite criar soluções personalizadas e inovadoras para atender às necessidades específicas de cada cliente. Com meu compromisso com a excelência e a entrega de projetos de alta qualidade, estou confiante de que posso ajudar sua empresa a alcançar seus objetivos de negócios e levar sua presença online para o próximo nível. Vamos trabalhar juntos para criar soluções web excepcionais que impressionem seus clientes e aumentem a satisfação do usuário!</p>
             <div class = "botoes">   
@@ -131,5 +131,16 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
+<script>
+function myFunction() {
+  var div = document.getElementById("sobre-mim");
+  if (div.style.fontSize == "50px") {
+    div.style.fontSize = "30px";
+  } else {
+    div.style.fontSize = "50px";
+  }
+}
+</script>
+
 </html>
