@@ -70,7 +70,6 @@
 
 .caixa-principal {
     display: flex;
-    width: 100%;
     height: 100vh;                                                                           
     background: black;
     background-size: cover;
@@ -107,9 +106,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
     border-radius: 100px;
     border: 2px solid white;
+    width: 25%;
 
 }
 .foto:hover {
@@ -542,7 +541,7 @@ footer{
 .botao {
     position: fixed;
     bottom: 20px;
-    left: 270px;
+    left: 300px;
     background-color: transparent;
     z-index: 1;
 
