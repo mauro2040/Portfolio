@@ -114,7 +114,6 @@
 .foto:hover {
     transform: scale(1.1,1.1);
     transition: 3s;
-    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
 }
     
 .sobre-mim {
