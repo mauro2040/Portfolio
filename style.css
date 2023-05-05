@@ -5,6 +5,10 @@
     font-family: 'Josefin Sans', sem serifa;
 }    
 
+.body{
+    width: 100vw;
+}
+
 .superior {
     width: 100%;
     display: flex;
@@ -74,7 +78,6 @@
     justify-content: space-around;
     align-items: center;
 }
-
 
 .nome {
     display: flex;
@@ -381,10 +384,12 @@ footer{
 }
 
 /*media query*/
-@media (max-width: 740px){
+@media (max-width: 768px){
 
 .superior{
     height: 50px;
+    width: 100vw;
+
 }
 
 .portfolio{
@@ -394,6 +399,11 @@ footer{
 .portfolio spam {
     color: red;
     font-size: 20px;
+}
+
+.menu{
+    display: flex;
+
 }
 
 .caixa-principal{
@@ -494,17 +504,19 @@ footer{
     position: relative;
     transition: all 1s ease-in-out;
     flex-direction: column;
-    top:  80px;
-    left: 100px;
+    top:  65px;
+    left: 97px;
     text-align: center;
     overflow: hidden;
     background-color:  #262626;
     align-items: center;
 }
 .menu-icon{
-    display: block;
+    display: flex;
     cursor: pointer;
     width: 30px;
+    left: 20px
+    
 }
 .link-menu{
     display: flex;
@@ -530,7 +542,7 @@ footer{
 .botao {
     position: fixed;
     bottom: 20px;
-    right: 40px;
+    left: 270px;
     background-color: transparent;
     z-index: 1;
 
